@@ -8,9 +8,7 @@ const basic = {
   ...basicScenario,
   label: 'Elementary test',
   selectors: ['body'],
-  removeSelectors: [
-    'h1',
-  ],
+  removeSelectors: ['h1'],
   misMatchThreshold: 0.4,
   referenceUrl: basicScenario.referenceUrl + '/stopwatch/',
 };
@@ -20,6 +18,10 @@ const config = {
   fileNameTemplate: '{scenarioLabel}',
   onBeforeScript: 'puppet/onBefore.js',
   onReadyScript: 'puppet/onReady.js',
+  engineOptions: {
+
+    executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
+  },
   viewports: [
     {
       name: 'tablet_h',
@@ -41,7 +43,7 @@ const config = {
       ...basic,
       label: 'Stopwatch after one circle',
       postDOMChangeWait: 12000,
-    }
+    },
   ],
 };
 
