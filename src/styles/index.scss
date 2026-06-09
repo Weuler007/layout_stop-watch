@@ -25,8 +25,7 @@ html {
   background-color: #0700ff;
   animation: rotate-minute 3600s steps(60) infinite;
   transform-origin: 0% 50%;
-
-  // transform: translate(0%, 0%);
+  transform: translate(-50%, -50%) rotate(-90deg);
 }
 
 /* Ponteiro dos segundos */
@@ -82,4 +81,3 @@ html {
 .stopwatch--speed-up .stopwatch__minute {
   animation-duration: 600s;
 }
-
