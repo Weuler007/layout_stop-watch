@@ -12,7 +12,11 @@
     "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
-    "test": "npm run lint && npm run test:only"
+    "test": "npm run lint && npm run test:only",
+
+    "test:reference": "backstop reference",
+    "test:visual": "backstop test",
+    "test:approve": "backstop approve"
   },
   "keywords": [],
   "author": "Mate Academy",
